@@ -1,0 +1,10 @@
+Imersão Java
+POO  com Java;alex;2024-02-25T14:45;h103;20;1
+pedro;pedro@teste.com
+---
+Semana Tecnologia
+kotlin para iniciantes;maria;2025-03-14T15:45;h408;20;0
+---
+Semana da Diversidade
+representatividade;ana;2025-06-12T14:30;h203;20;0
+---
