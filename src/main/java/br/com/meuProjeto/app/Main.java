@@ -66,7 +66,7 @@ public class Main {
                 String local = scanner.nextLine();
                 System.out.print("Digite a quantidade máxima de ouvintes: ");
                 int maxOuvintes = scanner.nextInt();
-                scanner.nextLine();  // Consumir nova linha
+                scanner.nextLine();
 
                 Palestra novaPalestra = new Palestra(titulo, palestrante, diaHora, local, maxOuvintes);
 
@@ -83,7 +83,7 @@ public class Main {
                 }
 
                 int escolhaPalestra = scanner.nextInt();
-                scanner.nextLine();  // Consumir nova linha
+                scanner.nextLine();
 
                 Palestra palestraEscolhida = palestras.get(escolhaPalestra - 1);
 
@@ -107,7 +107,7 @@ public class Main {
                 }
 
                 int escolhaPalestra = scanner.nextInt();
-                scanner.nextLine();  // Consumir nova linha
+                scanner.nextLine();
 
                 Palestra palestraEscolhida = palestras.get(escolhaPalestra - 1);
 
@@ -137,7 +137,7 @@ public class Main {
             EventoDAO.salvarEventos(eventos);
         }
 
-        // Listar palestras por dia e horário ao final da execução
+
         listarPalestrasPorDiaEHorario(eventos);
     }
 
@@ -181,7 +181,7 @@ public class Main {
         });
     }
 
-    // Novo método para listar todas as palestras
+
     private static void listarTodasPalestras(List<Evento> eventos) {
         System.out.println("Todas as Palestras Cadastradas:");
         eventos.forEach(evento -> {

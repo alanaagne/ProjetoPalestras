@@ -39,7 +39,7 @@ public class Evento implements Serializable {
             palestras.add(palestraAtualizada);
             return true;
         } else {
-            palestras.add(palestraExistente); // Reverter a alteração
+            palestras.add(palestraExistente);
             return false;
         }
     }
@@ -47,7 +47,7 @@ public class Evento implements Serializable {
     private boolean verificarConflito(Palestra novaPalestra) {
         for (Palestra p : palestras) {
             if (p.getLocal().equals(novaPalestra.getLocal()) && p.getDiaHora().isEqual(novaPalestra.getDiaHora())) {
-                return true;  // Conflito de agenda
+                return true;
             }
         }
         return false;
