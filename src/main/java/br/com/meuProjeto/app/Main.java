@@ -25,7 +25,7 @@ public class Main {
             System.out.println((eventos.size() + 2) + ". Sair");
 
             int escolhaEvento = scanner.nextInt();
-            scanner.nextLine();  // Consumir nova linha
+            scanner.nextLine();  
 
             if (escolhaEvento == eventos.size() + 2) {
                 break;
@@ -35,13 +35,14 @@ public class Main {
             }
 
             Evento eventoEscolhido = eventos.get(escolhaEvento - 1);
+            System.out.println("Evento escolhido: " + eventoEscolhido.getNome());
 
             System.out.println("1. Cadastrar uma nova palestra");
             System.out.println("2. Inscrever-se em uma palestra existente");
             System.out.println("3. Alterar uma palestra existente");
 
             int escolhaAcao = scanner.nextInt();
-            scanner.nextLine();  // Consumir nova linha
+            scanner.nextLine();  
 
             if (escolhaAcao == 1) {
                 System.out.print("Digite o título da palestra: ");
@@ -71,7 +72,7 @@ public class Main {
                 Palestra novaPalestra = new Palestra(titulo, palestrante, diaHora, local, maxOuvintes);
 
                 if (eventoEscolhido.adicionarPalestra(novaPalestra)) {
-                    System.out.println("Palestra adicionada com sucesso!");
+                    System.out.println("Palestra adicionada ao evento " + eventoEscolhido.getNome() + " com sucesso!");
                 } else {
                     System.out.println("Erro: Conflito de agenda. Palestra não adicionada.");
                 }
@@ -137,14 +138,13 @@ public class Main {
             EventoDAO.salvarEventos(eventos);
         }
 
-
         listarPalestrasPorDiaEHorario(eventos);
     }
 
     private static List<Evento> inicializarEventos() {
         List<Evento> eventos = EventoDAO.carregarEventos();
 
-        // Adiciona eventos preexistentes se ainda não estiverem na lista
+        
         adicionarEventoSeNaoExistir(eventos, "Imersão Java");
         adicionarEventoSeNaoExistir(eventos, "Semana Tecnologia");
         adicionarEventoSeNaoExistir(eventos, "Semana da Diversidade");
@@ -155,7 +155,7 @@ public class Main {
     private static void adicionarEventoSeNaoExistir(List<Evento> eventos, String nomeEvento) {
         for (Evento evento : eventos) {
             if (evento.getNome().equals(nomeEvento)) {
-                return; // Evento já existe
+                return; 
             }
         }
         eventos.add(new Evento(nomeEvento, new ArrayList<>()));
@@ -180,7 +180,6 @@ public class Main {
             System.out.println(palestra.getDiaHora() + " - " + palestra.getTitulo() + " - " + palestra.getPalestrante() + " - " + palestra.getLocal());
         });
     }
-
 
     private static void listarTodasPalestras(List<Evento> eventos) {
         System.out.println("Todas as Palestras Cadastradas:");

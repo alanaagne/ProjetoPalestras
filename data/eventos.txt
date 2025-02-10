@@ -1,21 +1,16 @@
 Imersão Java
-POO  com Java;alex;2024-02-25T14:45;h103;20;20
-pedro;pedro@teste.com
+POO com java;maria;2025-04-14T15:45;h415;20;0
 ---
-representatividade;ana;2025-06-12T14:30;h203;20;7
-bruna;bruna@teste.com
+c++;carla;2025-04-12T15:45;h656;1;0
 ---
-kotlin para iniciantes;maria;2025-02-12T14:30;h206;20;0
----
-c++;erica;2025-03-25T14:30;h405;20;0
----
-Excel;erica;2025-02-12T15:30;h505;1;1
----
-introdução a java;alana;2025-02-12T14:30;h458;10;0
----
-Introdução a Python;Alana;2025-12-23T12:30;H108;20;0
----
-Introdução a C#;Erica Meire;2025-12-23T12:30;H107;20;0
----
+###
 Semana Tecnologia
+kotlin;erica;2025-02-14T14:30;h102;20;2
+alex;alex@teste.com
+ana;ana@teste.com
+---
+###
 Semana da Diversidade
+representatividade;paulo;2025-06-14T12:40;h408;20;0
+---
+###

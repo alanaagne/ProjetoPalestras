@@ -34,6 +34,8 @@ public class EventoDAO {
                     writer.write("---");
                     writer.newLine();
                 }
+                writer.write("###"); 
+                writer.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -50,6 +52,12 @@ public class EventoDAO {
             while ((linha = reader.readLine()) != null) {
                 if (linha.equals("---")) {
                     palestra = null;
+                } else if (linha.equals("###")) {
+                    if (evento != null && palestras != null) {
+                        eventos.add(evento);
+                    }
+                    evento = null;
+                    palestras = null;
                 } else if (palestras == null) {
                     evento = new Evento(linha, new ArrayList<>());
                     palestras = evento.getPalestras();
@@ -75,6 +83,7 @@ public class EventoDAO {
                     }
                 }
             }
+            
             if (evento != null && palestras != null) {
                 eventos.add(evento);
             }

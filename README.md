@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como parte da disciplina de Linguagem de Programação II. Ele tem como objetivo gerenciar eventos, palestras e inscrições de ouvintes.
 
-Este projeto foi desenvolvido no Intellij usando Java 17.
+Este projeto foi desenvolvido no Eclipse IDE usando Java 17.
 ## 🌟 Funcionalidades
 
 - **Cadastro de Palestras:** Permite o cadastro de novas palestras associadas a um evento.
