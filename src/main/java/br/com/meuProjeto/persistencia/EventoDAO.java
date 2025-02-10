@@ -69,7 +69,7 @@ public class EventoDAO {
                                 LocalDateTime.parse(dados[2], formatter),
                                 dados[3],
                                 Integer.parseInt(dados[4]));
-                        // Ajustar o número de inscritos
+                        
                         for (int i = 0; i < Integer.parseInt(dados[5]); i++) {
                             palestra.inscreverOuvinte();
                         }
