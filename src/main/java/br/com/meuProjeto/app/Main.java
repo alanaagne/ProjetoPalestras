@@ -25,7 +25,7 @@ public class Main {
             System.out.println((eventos.size() + 2) + ". Sair");
 
             int escolhaEvento = scanner.nextInt();
-            scanner.nextLine();  
+            scanner.nextLine(); 
 
             if (escolhaEvento == eventos.size() + 2) {
                 break;
