@@ -1,0 +1,19 @@
+Imersão Java
+Inovação;maria;2025-02-14T14:30;h103;20;4
+alex;alex@teste.com
+carla;carla@teste.com
+pedro;pedro@teste.com
+ana;ana@teste.com
+---
+###
+Semana Tecnologia
+Automação;caio;2025-03-14T15:45;h408;20;0
+---
+python;julia;2025-05-26T14:45;h450;1;1
+bruna;bruna@teste.com
+---
+###
+Semana da Diversidade
+Roda de conversa;tereza;2025-09-14T16:30;h102;20;0
+---
+###
